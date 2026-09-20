@@ -1,6 +1,3 @@
-#!/usr/bin/env python3
-"""Simple sequential internet speed tester."""
-
 import argparse
 import time
 import urllib.request
