@@ -162,34 +162,3 @@ internet-speed-test/
 ├── README.md
 └── .gitignore
 ```
-
-## Technical Details
-
-* Python 3
-* `urllib.request` for HTTP requests
-* `time.perf_counter()` for high-resolution timing
-* `statistics.mean()` for calculating average request time
-* Sequential request execution
-* Complete response body is read before starting the next request
-* No external dependencies
-
-## Limitations
-
-This script measures **HTTP download throughput to a specific server**. It is not intended to be a full replacement for services such as Speedtest.
-
-The measured speed can be affected by:
-
-* distance to the server;
-* network latency;
-* routing;
-* server load;
-* ISP bandwidth;
-* Wi-Fi or Ethernet conditions;
-* VPN or proxy usage;
-* network congestion.
-
-Therefore, the result may differ from the speed reported by other speed-testing services.
-
-## License
-
-This project is provided for educational and testing purposes.
